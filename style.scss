@@ -1,0 +1,86 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+body{
+
+}
+@font-face{
+     font-family: roboto;
+     src: url(fonts/Roboto-Medium.ttf);
+}
+#nav{
+     position: fixed;
+     width: 100%;
+     display: flex;
+     justify-content: space-around;
+     height: 65px;
+     align-items: center;
+     margin-top: 40px;
+     background-color: rgba($color: #120D08, $alpha: 0.2);
+     color: #fbfbfb;
+
+     ul{
+          display: flex;
+          justify-content: space-around;
+          width: 50%;
+          text-decoration: none;
+          list-style: none;
+          font-family: roboto;
+     }
+     svg{
+          margin-top: 60px;
+     }
+}
+#homer{
+     background-image: url(https://dsm01pap006files.storage.live.com/y4mAaXxBi7E1G5RhfF-wGultjA4LdkF17giHStM_kExzydwddsQNYuiM3IFfb5QWISEaDvqbFVASnb5_fIKVYccwhpwElPHlPnC1hx8PRg8JIBBW5TJQ42Jp19aALUEtRtbhfW0i1e1MZXTuf4PSSbikq0keq651NqrCzbyVAzuDVihHMsKloXRXRha7Nkc_zfG0VYYU3R-y_uOWaqtQEv7hg/DSCF1209.JPG?psid=1&width=1371&height=914);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+     height: 100vh;
+     #wrapper{
+          background: linear-gradient(90deg, rgba(181, 50, 47,0.8) 0%, rgba(24, 23, 53,0.8) 100%);
+          height: 100vh;
+          justify-content: center;
+          margin: auto;
+          display: flex;
+          align-items: center;
+     }
+     #cont1wrap{
+          //justify-content: space-around;
+          margin-top: -70px;
+     }
+     #cont2wrap{
+          flex-direction: column;
+          width: 760.64px;
+          #imgcont{
+               width: 100%;
+               display: flex;
+               justify-content: space-between;
+               div{
+                    border: 1px solid grey;
+               }
+          }
+     }
+}
+#base{
+     display: flex;
+     width: 85%;
+     justify-content: space-around;
+     div{
+          width: 500px;
+     }
+     margin-top: 170px;
+}
+#img1{
+     background-image: url(images/DSCF1224.JPG);
+     background-repeat: no-repeat;
+     background-position-x: -115px;
+     background-position-y: -100px;}
+#img2{
+     background-image: url(images/DSCF1179.JPG);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+}
