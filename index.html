@@ -4,14 +4,23 @@
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>     <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>     
      <title>Document</title>
+     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
      <link rel="stylesheet" href="style.css">
 </head>
 <body>
-     <div id="nav">
+     <label for="check12" class="bbox">
+          <input type="checkbox" id="check122"/> 
+          <span></span>
+          <span></span>
+          <span></span>
+     </label>
+
+     <div class="nav" style="display: none;">
           <ul>
                <li>HOME</li>
-               <li>TRANSFORMATIONS</li>
+               <li><a href="/transformations/trans.html">TRANSFORMATIONS</a></li>
                <li>CONTACT</li>
                <li>PROGRAMS & COACHING</li>
           </ul>
@@ -34,12 +43,12 @@
           <div id="wrapper">
                <div id="base">
                     <div id="cont1wrap" style="display: flex; flex-direction: column; height: 650px;">
-                         <svg xmlns="http://www.w3.org/2000/svg" width="443" height="563" viewBox="0 0 443 563">
+                         <svg id="svg1" xmlns="http://www.w3.org/2000/svg" width="443" height="563" viewBox="0 0 443 563">
                               <text id="PUSH_THE_LIMIT" data-name="PUSH
                             THE
                             LIMIT" transform="translate(2 190)" stroke="#fff" stroke-linejoin="round" stroke-width="2" font-size="169" font-family="Roboto-BlackItalic, Roboto" font-weight="500" font-style="italic" letter-spacing="-0.05em" style="mix-blend-mode: lighten;isolation: isolate"><tspan x="0" y="0">PUSH</tspan><tspan x="0" y="161">THE</tspan><tspan x="0" y="322">LIMIT</tspan></text>
                             </svg>                                                     
-                            <svg xmlns="http://www.w3.org/2000/svg" width="438" height="105" viewBox="0 0 538 105">
+                         <svg id="svg2" xmlns="http://www.w3.org/2000/svg" width="438" height="105" viewBox="0 0 538 105">
                               <text id="A_place_dedicated_to_helping_you_achieve_your_best_self._Take_the_chance_to_shape_the_individual_you_deserve_to_be." data-name="A place dedicated to helping you achieve 
                             your best self. Take the chance to shape 
                             the individual you deserve to be." transform="translate(269 28)" fill="#fff" font-size="29" font-family="Montserrat-Light, Montserrat" font-weight="300" letter-spacing="-0.05em"><tspan x="-268.975" y="0">A place dedicated to helping you achieve </tspan><tspan x="-258.506" y="35">your best self. Take the chance to shape </tspan><tspan x="-207.945" y="70">the individual you deserve to be.</tspan></text>
@@ -56,5 +65,6 @@
                </div>
           </div>
      </div>
+     <script src="app.js"></script>
 </body>
 </html>

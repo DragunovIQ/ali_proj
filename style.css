@@ -10,12 +10,9 @@
   src: url(fonts/Roboto-Medium.ttf);
 }
 
-#nav {
+.nav {
   position: fixed;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   height: 65px;
@@ -27,7 +24,7 @@
   color: #fbfbfb;
 }
 
-#nav ul {
+.nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -39,7 +36,13 @@
   font-family: roboto;
 }
 
-#nav svg {
+.nav ul a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #fbfbfb;
+}
+
+.nav svg {
   margin-top: 60px;
 }
 
@@ -119,5 +122,158 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+@media screen and (max-width: 1366px) {
+  #cont2wrap {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  #cont2wrap #imgcont {
+    width: 750px !important;
+  }
+  #cont1wrap #svg1 {
+    width: 343px !important;
+  }
+  #cont1wrap #svg2 {
+    width: 328px !important;
+  }
+  #base {
+    margin-top: 120px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .nav {
+    display: none;
+    margin-top: 0px;
+    position: fixed;
+    background-color: rgba(18, 13, 8, 0.8);
+    height: 100%;
+    z-index: 5;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .nav ul {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    height: 50%;
+    text-align: center;
+  }
+  .nav svg {
+    position: absolute;
+    top: -25px;
+  }
+  #base {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    width: 100%;
+  }
+  #wrapper {
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 2200px;
+  }
+  #cont1wrap {
+    margin-top: 370px !important;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #cont1wrap #svg1 {
+    width: 95vw !important;
+  }
+  #cont1wrap #svg2 {
+    width: 328px !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #cont1wrap {
+    margin-top: 955px !important;
+    height: 586px;
+  }
+  #cont2wrap {
+    height: unset !important;
+  }
+  #imgcont {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 1100px;
+  }
+  label {
+    z-index: 6;
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 70px;
+    cursor: pointer;
+    top: 30px;
+    left: 30px;
+  }
+  label span {
+    background: #e4e2e2;
+    border-radius: 5px;
+    height: 6px;
+    margin: 7px 0;
+    -webkit-transition: 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+    transition: 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  }
+  span:nth-of-type(1) {
+    width: 50%;
+  }
+  span:nth-of-type(2) {
+    width: 100%;
+  }
+  span:nth-of-type(3) {
+    width: 75%;
+  }
+  input[type="checkbox"] {
+    display: none;
+  }
+  input[type="checkbox"]:checked ~ span:nth-of-type(1) {
+    -webkit-transform-origin: bottom;
+            transform-origin: bottom;
+    -webkit-transform: rotatez(45deg) translate(8px, 0px);
+            transform: rotatez(45deg) translate(8px, 0px);
+  }
+  input[type="checkbox"]:checked ~ span:nth-of-type(2) {
+    -webkit-transform-origin: top;
+            transform-origin: top;
+    -webkit-transform: rotatez(-45deg);
+            transform: rotatez(-45deg);
+  }
+  input[type="checkbox"]:checked ~ span:nth-of-type(3) {
+    -webkit-transform-origin: bottom;
+            transform-origin: bottom;
+    width: 50%;
+    -webkit-transform: translate(30px, -11px) rotatez(45deg);
+            transform: translate(30px, -11px) rotatez(45deg);
+  }
+  .ttog {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
 }
 /*# sourceMappingURL=style.css.map */
